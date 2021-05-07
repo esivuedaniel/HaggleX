@@ -1,0 +1,36 @@
+name: hagglex
+description: A new Flutter application.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.0
+  flutter_svg: ^0.19.1
+  intl_phone_field: ^1.4.4
+  graphql_flutter: ^4.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/
+
+  fonts:
+     - family: Grotesquepro
+       fonts:
+         - asset: fonts/basis_grotesquepro_bold.ttf
+         - asset: fonts/basis_grotesquepro_regular.ttf
