@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hagglex/component/MyButton.dart';
+import 'package:hagglex/ui/DashBoard.dart';
 
 class CompleteSetUpScreen extends StatelessWidget {
   static String id="complete_setup_screen";
@@ -37,7 +38,7 @@ class CompleteSetUpScreen extends StatelessWidget {
       colorCradient1: Color(0xFFFFC175),
       colorCradient2: Color(0xFFFFC175),
       onPressed: (){
-
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) =>DashBoard()));
       },);
 
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hagglex/Constant.dart';
 import 'package:hagglex/component/MyButton.dart';
+import 'package:hagglex/ui/DashBoard.dart';
 import 'package:hagglex/ui/SignUpScreen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -92,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
     colorCradient1: Color(0xFFFFC175),
     colorCradient2: Color(0xFFFFC175),
     onPressed: (){
-
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) =>DashBoard()));
     },);
     final registerUserText = Align(
         alignment: Alignment.center,
