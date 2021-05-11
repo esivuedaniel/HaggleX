@@ -93,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
     colorCradient1: Color(0xFFFFC175),
     colorCradient2: Color(0xFFFFC175),
     onPressed: (){
-      Navigator.of(context).push(MaterialPageRoute(builder: (context) =>DashBoard()));
+      Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => DashBoard()),(Route<dynamic> route) => false);
     },);
     final registerUserText = Align(
         alignment: Alignment.center,

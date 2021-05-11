@@ -38,7 +38,7 @@ class CompleteSetUpScreen extends StatelessWidget {
       colorCradient1: Color(0xFFFFC175),
       colorCradient2: Color(0xFFFFC175),
       onPressed: (){
-        Navigator.of(context).push(MaterialPageRoute(builder: (context) =>DashBoard()));
+        Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => DashBoard()),(Route<dynamic> route) => false);
       },);
 
 
